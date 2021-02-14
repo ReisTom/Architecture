@@ -1,0 +1,16 @@
+cd C:\Users\tomre\PycharmProjects\TarifSimulator_WE\venv\Lib\site-packages\PyQt5
+
+
+
+pyuic5 -x [Input_Path] -o [Output_Path]
+
+Thomas: 
+
+Window:
+pyuic5 -x C:\Users\tomre\PycharmProjects\Architecture\ui\Windows\main_window\main_window.ui -o C:\Users\tomre\PycharmProjects\Architecture\ui\Windows\main_window\main_window_v0.3.py
+
+Page:
+pyuic5 -x C:\Users\tomre\PycharmProjects\Architecture\ui\Components\page_person.ui -o C:\Users\tomre\PycharmProjects\Architecture\ui\Components\page_person.py
+
+Toolbar:
+pyuic5 -x C:\Users\tomre\PycharmProjects\Architecture\ui\Components\toolbar\toolbar.ui -o C:\Users\tomre\PycharmProjects\Architecture\ui\Components\toolbar\toolbar.py
