@@ -13,6 +13,11 @@ from PyQt5.QtCore import Qt, QPropertyAnimation
 
 
 class SidemenuView(object):
+    def __init__(self, layout):
+        self.widget_side_menu = QtWidgets.QWidget()
+        layout.addWidget(self.widget_side_menu)
+        self.setupUi(self.widget_side_menu)
+
     def setupUi(self, widget_side_menu):
         widget_side_menu.setObjectName("widget_side_menu")
         widget_side_menu.resize(94, 791)
@@ -41,11 +46,6 @@ class SidemenuView(object):
     def retranslateUi(self, widget_side_menu):
         _translate = QtCore.QCoreApplication.translate
         widget_side_menu.setWindowTitle(_translate("widget_side_menu", "Form"))
-
-    def create(self, layout):
-        self.widget_side_menu = QtWidgets.QWidget()
-        layout.addWidget(self.widget_side_menu)
-        self.setupUi(self.widget_side_menu)
 
     def extend(self, button_names):
         self.change_width(200)
