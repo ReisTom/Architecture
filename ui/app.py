@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5.QtWidgets import QMainWindow, QApplication
+from PyQt5.QtWidgets import QApplication
 
 from ui.windows.main_window.main_controller import MainWindowController
 

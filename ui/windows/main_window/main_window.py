@@ -36,12 +36,6 @@ class Ui_MainWindow(QMainWindow):
         flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint)
         self.setWindowFlags(flags)
 
-        # connenct the buttons
-        self.btn_close.clicked.connect(lambda: self.close())
-        self.btn_maximise_restore.clicked.connect(lambda: self.main_controller.change_window_format())
-        self.btn_minimize.clicked.connect(lambda: self.minimize())
-        self.btn_tgl_menu.clicked.connect(lambda: self.change_sidemenu())
-
         #create function that handles window_drag events
         def move_window(event):
             self.main_controller.on_drag_window()
@@ -383,10 +377,6 @@ class Ui_MainWindow(QMainWindow):
 
     def minimize(self):
         self.showMinimized()
-
-    def change_sidemenu(self):
-        self.main_controller.change_sidemenu()
-
 
 if __name__ == "__main__":
     import sys

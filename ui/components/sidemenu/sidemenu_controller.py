@@ -1,6 +1,6 @@
-from ui.components.toolbar import sidemenu_view
-from ui.components.toolbar.sidemenu_model import SidemenuModel
-from ui.components.toolbar.sidemenu_view import SidemenuView
+from ui.components.sidemenu import sidemenu_view
+from ui.components.sidemenu.sidemenu_model import SidemenuModel
+from ui.components.sidemenu.sidemenu_view import SidemenuView
 
 
 class SidemenuController:
@@ -9,7 +9,10 @@ class SidemenuController:
         self.sidemenu_model = SidemenuModel(self)
         self.sidemenu_view = SidemenuView(self.main_controller.get_centerlayout())
 
+        ## self.tarif
 
+
+# ToDo State pattern for extend and minimize
 
     def extend_sidemenu(self):
         self.sidemenu_view.extend("here goes the names")
